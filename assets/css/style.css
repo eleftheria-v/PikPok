@@ -1,0 +1,343 @@
+
+@media screen and (min-width:600px){
+	.container{
+		max-width:100%;
+		margin:0 auto;
+		display:grid;
+		grid-template-columns:repeat(8,1fr);
+		grid-auto-rows:minmax(50px,auto);
+		grid-gap:10px;
+		grid-template-areas:
+					"h h h h h h h h"
+					"a a a a a a a a"
+					"m m m m m m m m"
+					"m m m m m m m m"
+					"m m m m m m m m"
+					"m m m m m m m m"
+					"m m m m m m m m"
+					"f f f f f f f f";
+					
+	}
+} 
+ 
+
+/*@media screen and (min-width:900px){
+	.container{
+		max-width:100%;
+		margin:0 auto;
+		display:grid;
+		grid-template-columns:repeat(8,1fr);
+		grid-auto-rows:minmax(50px,auto);
+		grid-gap:10px;
+		grid-template-areas:
+					"h h h h h h h h"
+					"a a a a a a a a"
+					"m m m m m m m m"
+					"m m m m m m m m"
+					"m m m m m m m m"
+					"m m m m m m m m"
+					"m m m m m m m m"
+					"f f f f f f f f";
+	}
+}*/
+
+header{
+	grid-area:h;
+}
+aside{
+	grid-area:a;
+}
+main{
+	grid-area:m;
+}
+footer{
+	grid-area:f;
+}
+
+
+
+/*https://studyreadeducate.com/how-to-create-cards-using-html-and-css/*/
+
+
+*{
+ margin: 0px;
+ padding: 0px;
+}
+body{
+ font-family: arial;
+
+
+}
+.main{
+
+ margin: 2%;
+}
+photo1{
+	width: 100%;
+	box-shadow: 100px 200px 500px 200px;
+	background-color: #111111;
+	
+}
+photo2{
+	width: 40px;
+	height: 40px;
+	
+	text-align:middle;
+	margin:20px 200px 20px 40px;
+  /*border-top-right-radius: 5px;
+  border-top-left-radius: 5px;*/
+	
+}
+
+.card{
+     width: 50%;
+     display: inline-block;
+     box-shadow: 2px 2px 50px black;
+     border-radius: 5px; 
+     margin: 2%;
+    }
+
+.image img{
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+
+ }
+.cardprofile{
+     width: 20%;
+     display: inline-block;
+     box-shadow: 2px 2px 50px black;
+     border-radius: 5px; 
+     margin: 2%;
+    }
+
+.imageprofile img{
+  width: 100%;
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
+
+ }
+
+.title{
+ 
+  text-align: center;
+  padding: 10px;
+  
+ }
+
+h1{
+  font-size: 20px;
+ }
+.edit{
+	 width: 80%;
+     text-align: right;
+	 padding: 10px;
+
+}
+.des{
+  padding: 30px;
+  padding-top: 20px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+.card-btn
+{
+	background-color: #1c8adb;
+}
+button
+{
+	padding:10px;
+	color: white;
+	border-radius: 5px;
+	font-size: 15px;
+	margin-top: 40px;
+	margin-bottom: 10px;
+	border: none;
+	outline:none;
+	cursor: pointer;
+	background-color: slateblue;
+} 
+
+center{
+    text-align: center;
+}
+
+button:hover{
+  background-color:white;
+  color: gray;
+  transition: .5s;
+  cursor: pointer;
+}
+
+#custom-button{
+  margin-top: 40px;
+  margin-bottom: 10px;
+  background-color: slateblue;
+  border-radius: 5px;
+  padding:10px;
+  color: white;
+}
+#delete-button{
+  margin-top: 40px;
+  margin-bottom: 10px;
+  background-color: #ff0000;
+  border-radius: 5px;
+  padding:10px;
+  color: white;
+}
+#delete-button:hover{
+  background-color:white;
+  color: gray;
+  transition: .5s;
+  cursor: pointer;
+}
+
+/*edit profile*/
+.edit-profile{
+	width: 300px;
+	box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+	background: #fff;
+	padding: 20px;
+	margin: 8% auto 0;
+	text-align: center;
+}
+.input-box
+{
+	border-radius: 10px;
+	padding: 10px;
+	margin: 10px 0;
+	width:90%;
+	border: 1px solid #999;
+	outline: none;
+}
+
+
+
+
+/*NavBar*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: 'segoe ui';
+}
+
+.nav {
+  height: 59px;
+  width: 100%;
+  background-color: slateblue;
+  position: relative;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.active {
+  background-color: white;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 25px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:1050px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+
+
+/*Description*/
+
+
+input[type=text]{
+    width:50%;
+    height:20%;
+    border:5px solid #aaa;
+    padding: 10px;
+    margin:10px 15px;
+
+    
+  }
+  
+  input[type=text]:focus{
+    border-color: slateblue;
+
+  }
+
+textarea {
+  background: url(images/benice.png) center center no-repeat; /* This ruins default border */
+  border: 1px solid #888; 
+  outline: none;
+}
